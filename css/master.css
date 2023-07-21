@@ -1,0 +1,131 @@
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Aplicando CSS al encabezado*/
+#encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(211, 204, 204);
+    z-index: 1000;
+    position: fixed;
+}
+
+#opciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo{
+    width: 12%;
+}
+
+#menu{
+    width: 40%;
+}
+
+ul#opciones li a{
+    font-size: 1.1rem;
+    color: rgb(39, 38, 38);
+    position: relative;
+}
+
+
+
+/*Aplicando CSS a la primera imagen*/
+#Pi{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 3rem;
+    width: 100%;
+    background-color: #1F8A70;
+}
+
+#PrimeraImagen{
+    padding-left: 0rem;
+    width: 20rem;
+    border: 0.2rem solid black;
+    margin-top: 0rem;
+    margin-left: 10rem;
+}
+
+#TextoUno{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.Titulo{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background-color:#00425A;
+    height: 4rem;
+    color: white;
+    font-size: 1.2rem;
+}
+.tituloExclusivo{
+    margin-top: 0rem;
+}
+
+/*Aplicando css a la segunda imagen*/
+#Si{
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 3rem;
+    width: 100%;
+    background-color: #1F8A70;
+    justify-items: center;
+}
+
+#SegundaImagen{
+    width: 20rem;
+    border: 0.2rem solid black;
+    margin-top: 0rem;
+    margin-left: 10rem;
+}
+
+#TextoDos{
+    padding-top: 2rem;
+    padding-left: 4rem;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 0rem;
+}
+
+/*Aplicando CSS tercera parte*/
+#TercerArticulo{
+    background-color: #1F8A70;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.Circulos{
+    width: 10rem;
+}

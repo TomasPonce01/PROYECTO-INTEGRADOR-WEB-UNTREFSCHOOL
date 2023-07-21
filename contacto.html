@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+    <section id="FormularioDeContacto">
+        <h1>Completa los siguientes campos</h1>
+        <form action="datos.php" method="get">
+            <div>
+                <label for="nombre">Nombres</label>
+                <br>
+                <input type="text" name="Nombres" id="nombre" required placeholder="Ingrese su nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellidos</label>
+                <br>
+                <input type="text" name="apellidos" id="apellido" required placeholder="Ingrese su apellido">
+            </div>
+            <div>
+                <label for="email">Correo Electronico</label>
+                <br>
+                <input type="text" name="correo" id="email" required placeholder="Ingrese su correo electronico">
+            </div>
+            <div>
+                <label for="comentarios">Su consulta</label>
+                <br>
+                <textarea name="comentario" id="comentarios" cols="30" rows="10" required placeholder="Envienos su consulta"></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar consulta</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
