@@ -3,37 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Untref School - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="shortcut icon" href="./img/Añadir_un_título-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
-    <section id="FormularioDeContacto">
-        <h1>Completa los siguientes campos</h1>
-        <form action="datos.php" method="get">
-            <div>
-                <label for="nombre">Nombres</label>
-                <br>
-                <input type="text" name="Nombres" id="nombre" required placeholder="Ingrese su nombre">
+    <header id="encabezado">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid bg-danger p-1">
+              <a class="navbar-brand" href="./index.html"><b>UNTREF SCHOOL</b></a>
             </div>
-            <div>
-                <label for="apellido">Apellidos</label>
-                <br>
-                <input type="text" name="apellidos" id="apellido" required placeholder="Ingrese su apellido">
-            </div>
-            <div>
-                <label for="email">Correo Electronico</label>
-                <br>
-                <input type="text" name="correo" id="email" required placeholder="Ingrese su correo electronico">
-            </div>
-            <div>
-                <label for="comentarios">Su consulta</label>
-                <br>
-                <textarea name="comentario" id="comentarios" cols="30" rows="10" required placeholder="Envienos su consulta"></textarea>
-            </div>
-            <div>
-                <button type="submit">Enviar consulta</button>
-            </div>
-        </form>
-    </section>
+          </nav>
+    </header>
+
+    <!--En este caso para hacer funcional el formulario use un mail temporal. El correo que figura en "action" es donde se envia el mail-->
+    <form action="https://formsubmit.co/wipil26599@quipas.com" method="POST" class="p-5">
+      <div class="row pt-4">
+        <div class="col">
+          <label for="Nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" aria-label="First name" name="Nombre" required>
+        </div>
+        <div class="col">
+          <label for="Apellido" class="form-label">Apellido</label>
+          <input type="text" class="form-control" aria-label="Last name" name="Apellido" required>
+        </div>
+      </div>
+      <div class="mb-3 pt-3">
+        <label for="Mail" class="form-label">Correo electronico</label>
+        <input type="email" class="form-control" name="Mail" placeholder="nombre@ejemplo.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="Comentario" class="form-label">Ingrese su consulta</label>
+        <textarea class="form-control" name="Comentario" rows="5" required maxlength="500"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <div id="exclusivamente">
+      <footer id="pieDePagina">
+        <div id="redes">
+          <p>Podes informarte mas en nuestras redes sociales.</p>
+          <ul id="RedesSociales">
+            <li><a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+          </ul>
+        </div>
+        <div id="mapa">
+          <h4>Nuestro instituto</h4>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5523.005092128448!2d-58.56755320053471!3d-34.60420004930137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1690392684388!5m2!1ses!2sar" width="150" height="150" style="border:0;" id="maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </footer>
+      <table id="pieDePagina2">
+        <thead>
+          <tr>
+            <th class="pt-4">Telefono</th>
+            <th class="pt-4">Correo electronico</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="tel:1100000000"><ion-icon name="call-outline"></ion-icon></a>
+            </td>
+            <td>
+              <a href=""><ion-icon name="mail-outline"></ion-icon>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

@@ -1,131 +1,215 @@
-ul{
-    list-style-type: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-img{
-    width: 100%;
-}
-
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
 }
 
-/*Aplicando CSS al encabezado*/
-#encabezado{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(211, 204, 204);
-    z-index: 1000;
-    position: fixed;
+ul{
+    list-style: none;
 }
 
-#opciones{
-    display: flex;
-    justify-content: space-around;
-}
-
-#logo{
-    width: 12%;
-}
-
-#menu{
-    width: 40%;
-}
-
-ul#opciones li a{
-    font-size: 1.1rem;
-    color: rgb(39, 38, 38);
-    position: relative;
-}
-
-
-
-/*Aplicando CSS a la primera imagen*/
-#Pi{
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-family:'Times New Roman', Times, serif;
-    text-align: center;
-    padding-top: 3rem;
+.img{
     width: 100%;
-    background-color: #1F8A70;
 }
 
-#PrimeraImagen{
-    padding-left: 0rem;
-    width: 20rem;
+.form-control{
+    resize: none;
+}
+
+#img2{
+    width: 50%;
+    margin: 20px;
     border: 0.2rem solid black;
-    margin-top: 0rem;
-    margin-left: 10rem;
 }
 
-#TextoUno{
-    padding-top: 4rem;
-    padding-left: 4rem;
-    width: 20rem;
-    height: 20rem;
-    margin-top: 2rem;
+#img3{
+    width: 50%;
+    margin-bottom: 20px;
+    border: 0.2rem solid black;
+}
+
+.imgRedonda{
+    width: 60%; /*Ver modificacion*/
+}
+
+.navbar{
+    padding: 0;
+    border-bottom: 0.15rem solid black;
+    position: fixed;
+    width: 100%;
+}
+
+.ImagenCentral{
+    border-bottom: 0.15rem solid black;
+    padding-top: 2rem;
+}
+
+button{
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+    background-color: #f57c19;
+    color: white;
+    border: 0.15em solid black;
+}
+
+/*.conteiner{
+    margin: auto;
+    padding-bottom: 0.5rem;
+}*/
+
+.conteiner1{
+    background-color: rgb(211, 159, 211);
+    padding-top: 0.5rem;
+    border-top: 0.1rem solid black;
+}
+.conteiner2{
+    background-color: #f09143;
+    padding-top: 0.5rem;
+}
+
+.conteiner3{
+    background-color: rgb(232, 240, 123);
+    border-bottom: 0.1rem solid black;
+    padding-top: 0.5rem;
+}
+
+.conteiner4{
+    background-color: rgb(112, 186, 236);
+    padding-top: 0.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.Noticia{
+    width: 50%;
+    border: 0.1rem solid black;
+}
+
+.Noticias{
+    padding-top: 1rem;
 }
 
 .Titulo{
     text-align: center;
-    width: 100%;
-    position: relative;
-    background-color:#00425A;
-    height: 4rem;
-    color: white;
-    font-size: 1.2rem;
-}
-.tituloExclusivo{
-    margin-top: 0rem;
+    background-color: #118366;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    border-radius: 1rem;
+    padding: 0.1rem;
+    border: 0.1rem solid black;
+    color: rgb(252, 252, 252);
+    margin-top: 0.5rem;
 }
 
-/*Aplicando css a la segunda imagen*/
-#Si{
-    display: flex;
-    align-items: center;
-    padding: 2rem;
-    font-size: 1.5rem;
-    font-family:'Times New Roman', Times, serif;
+#PrimerApartado{
     text-align: center;
-    padding-top: 3rem;
-    width: 100%;
-    background-color: #1F8A70;
-    justify-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-bottom: 0.1rem solid black;
 }
 
-#SegundaImagen{
-    width: 20rem;
-    border: 0.2rem solid black;
-    margin-top: 0rem;
-    margin-left: 10rem;
+#SegundoApartado{
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1.5rem;
+    border-bottom: 0.1rem solid black;
 }
 
-#TextoDos{
-    padding-top: 2rem;
-    padding-left: 4rem;
-    width: 20rem;
-    height: 20rem;
-    margin-top: 0rem;
-}
-
-/*Aplicando CSS tercera parte*/
-#TercerArticulo{
-    background-color: #1F8A70;
+.TercerApartado{
     display: flex;
-    padding: 2rem;
-    justify-content: space-between;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 20px;
+    justify-content: center;
 }
 
-.Circulos{
-    width: 10rem;
+/*Aplicando CSS al footer*/
+ion-icon{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+#pieDePagina{
+    display: flex;
+    border-bottom: 0.1rem solid black;
+    background-color: rgb(238, 51, 51);
+}
+#redes{
+    width: 50%;
+    text-align: center;
+    padding-top:  2rem;
+    border-right: 0.1rem solid black;
+    font-size: 15px;
+}
+#RedesSociales{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#mapa{
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+#pieDePagina2{
+    text-align: center;
+    width: 100%;
+    background-color: rgb(238, 51, 51);
+}
+
+#ancla{
+    text-align: center;
+    background-color: rgb(238, 51, 51);
+}
+
+/*Una vez terminado con el metodo Mobile First*/
+@media (min-width: 960px){
+    #PrimerApartado{
+        display: flex;
+        padding-right: 15rem;
+        padding-left: 15rem;
+        align-items: center;
+    }
+    #img2{
+        width: 20rem;
+    }
+    #SegundoApartado{
+        display: flex;
+        padding-right: 15rem;
+        padding-left: 15rem;
+        align-items: center;
+    }
+    #img3{
+        width: 20rem;
+    }
+    .imgRedonda{
+        width: 10rem;
+    }
+    #Exclusivo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .TercerApartado{
+        width: 30rem;
+        justify-content: space-evenly;
+    }
+    .CuartoApartado{
+        display: flex;
+    }
+    #exclusivamente{
+        display: flex;
+    }
+    #mapa{
+        border-right: 0.1rem solid black;
+        width: 52.5rem;
+    }
+    #pieDePagina2{
+        border-bottom: 0.1rem solid black;
+    }
+    #maps{
+        width: 500px;
+    }
 }

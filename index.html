@@ -3,114 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UntrefSchool</title>
+    <title>Untref School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <header id="encabezado">
-        <figure id="logo">
-            <a href="./index.html"><img src="./img/logoUNTREF.png" alt="Logo"></a>
-        </figure>
-        <nav id="menu">
-            <ul id="opciones">
-                <li><a href="#">¿Quienes somos?</a></li>
-                <li><a href="#">¿Porque elegirnos?</a></li>
-                <li><a href="#">Propueta educativa</a></li>
-                <li><a href="#">Ultimas Noticias</a></li>
-                <li><a href="./contacto.html" target="_blank">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="Conteiner-fluid">
+        <header id="encabezado">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid bg-danger p-2">
+                  <a class="navbar-brand" href="#"><b>UNTREF SCHOOL</b></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="#Ir1">¿Quienes somos?</a>
+                      <a class="nav-link" href="#Ir2">¿Porque elegirnos?</a>
+                      <a class="nav-link" href="#Ir3">Propuesta educativa</a>
+                      <a class="nav-link" href="#Ir4">Noticias</a>
+                      <a class="nav-link" href="#">Calendario academico</a>
+                      <a class="nav-link" href="./contacto.html" target="_blank">Contactanos</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
 
-    <section id="imagenCentral">
-        <img src="./img/Diseño sin título.png" alt="escuela">
-    </section>
+        <div>
+            <figure class="ImagenCentral">
+                <img src="./img/imagen central.png" class="img" alt="Imagen">
+            </figure>
+        </div>
 
-    <!--Armando html en primera imagen-->
-    <section class="Titulo">
-        <div class="tituloExclusivo">
+        <!--Apartado de Quienes somos-->
+        <section class="conteiner1" id="Ir1">
+          <div class="Titulo">
             <h1>¿Quienes somos?</h1>
-        </div>
-    </section>
-    <section id="Pi">
-        <div>
-            <figure id="PrimeraImagen">
-                <img src="./img/shubham-sharan-Z-fq3wBVfMU-unsplash.jpg" alt="">
-            </figure>
-        </div>
-        <div id="TextoUno">
-            <p>"Somos una institucion primaria, muy prestigiosa en el area con profesionales altamente calificados en la enseñanza. Puede confiar totalmente en nosotros."</p>
-        </div>
-    </section>
+          </div>
+          <div id="PrimerApartado">
+            <img src="./img/primertitulo.jpg" id="img2" alt="">
+            <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ex quia itaque velit, tenetur optio tempore eius similique eligendi repellat impedit temporibus assumenda, totam inventore eum et nisi dicta facere?</i></p>
+          </div>
+        </section>
 
-    <!--Armando html en la segunda imagen-->
-    <section class="Titulo">
-        <div class="tituloExclusivo">
+        <!--Apartado de Porque elegirnos-->
+        <section class="conteiner2" id="Ir2">
+          <div class="Titulo">
             <h1>¿Porque elegirnos?</h1>
-        </div>
-    </section>
-    <section id="Si">
-        <div>
-            <figure id="SegundaImagen">
-                <img src="./img/cdc-GDokEYnOfnE-unsplash.jpg" alt="">
-            </figure>
-        </div>
-        <div id="TextoDos">
-            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto id a ipsam accusamus aspernatur. Nobis laboriosam reprehenderit neque vitae, beatae in sint, quaerat molestias quam atque aperiam eaque natus reiciendis?"</p>
-        </div>
-    </section>
+          </div>
+          <div id="SegundoApartado">
+            <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam similique dicta ad saepe aliquid cum velit, et id. Molestiae ducimus aliquid odit voluptatum delectus repellendus. Magnam, pariatur dignissimos! Ducimus, quam.</i></p>
+            <img src="./img/segundotitulo.jpg" id="img3" alt="">
+          </div>
+        </section>
 
-    <!--Tercer parte-->
-    <section class="Titulo">
-        <div>
-            <h1>Propuesta educativa</h1>
-        </div>
-    </section>
-    <section id="TercerArticulo">
-        <figure class="Circulos">
-            <img src="./img/literatura.png" alt="">
-        </figure>
-        <figure class="Circulos">
-            <img src="./img/matematica.png" alt="">
-        </figure>
-        <figure class="Circulos">
-            <img src="./img/Ciencias sociales.png" alt="">
-        </figure>
-    </section>
+        <!--Apartado de propuesta educativa-->
+        <section class="conteiner3" id="Ir3">
+            <div class="Titulo">
+              <h1>Propuesta educativa</h1>
+            </div>
+          <div id="Exclusivo">
+            <article class="TercerApartado">
+              <div>
+                <img src="./img/matematica.png" class="imgRedonda" alt="">
+                <p>Matematica</p>
+              </div>
+              <div>
+                <img src="./img/literatura.png" class="imgRedonda" alt="">
+                <p>Literatura</p>
+              </div>
+            </article>
+            <article class="TercerApartado">
+              <div>
+                <img src="./img/Ciencias sociales.png" class="imgRedonda" alt="">
+                <p>Ciencias Sociales</p>
+              </div>
+              <div>
+                <img src="./img/CienciasNaturales.png" class="imgRedonda" alt="">
+                <p>Ciencias Naturales</p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-    <!--Cuarta parte-->
-    <section class="Titulo">
-        <div>
-            <h1>Ultimas noticias</h1>
-        </div>
-    </section>
 
-    <footer id="PieDePagina">
-        <div id="datosContacto">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Redes sociales</th>
-                        <th>NombreCentrado</th>
-                        <th>Correo electronico</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p>Instragram, Twitter, Facebook</p>
-                        </td>
-                        <td>
-                            <p>UNTREFSCHOOL</p>
-                        </td>
-                        <td>
-                            <a href="mailto:untrefschool@gmail.edu.com">untrefschool@gmail.edu.com</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <!--Apartado de noticias-->
+        <section class="conteiner4" id="Ir4">
+          <div class="Titulo">
+            <h1>Últimas noticias</h1>
+          </div>
+          <div class="CuartoApartado">
+            <div>
+              <article class="Noticias">
+                <img src="./img/noticia1.jpg" class="Noticia">
+              </article>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ut!</p>
+              <button><b>Mas detalles</b></button>
+            </div>
+            <div>
+              <article class="Noticias">
+                <img src="./img/noticia2.jpg" class="Noticia" alt="">
+              </article>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, dolore?</p>
+              <button><b>Mas detalles</b></button>
+            </div>
+          </div>
+        </section>
+        
+        <!--Armando el pie de pagina-->
+        <div id="exclusivamente">
+          <footer id="pieDePagina">
+            <div id="redes">
+              <p><b>Podes informarte mas en nuestras redes sociales.</b></p>
+              <ul id="RedesSociales">
+                <li><a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+              </ul>
+            </div>
+            <div id="mapa">
+              <h4>Nuestro instituto</h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5523.005092128448!2d-58.56755320053471!3d-34.60420004930137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb9f8ff113%3A0x22fd08da6711928d!2sUniversidad%20Nacional%20de%20Tres%20de%20Febrero%20-%20Sede%20Caseros%20I!5e0!3m2!1ses!2sar!4v1690392684388!5m2!1ses!2sar" width="150" height="150" style="border:0;" id="maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </footer>
+          <table id="pieDePagina2">
+            <thead>
+              <tr>
+                <th class="pt-4">Telefono</th>
+                <th class="pt-4">Correo electronico</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="tel:1100000000"><ion-icon name="call-outline"></ion-icon></a>
+                </td>
+                <td>
+                  <a href=""><ion-icon name="mail-outline"></ion-icon>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </footer>
+        <div id="ancla">
+          <a href="#encabezado"><ion-icon name="chevron-up-outline"></ion-icon></a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
